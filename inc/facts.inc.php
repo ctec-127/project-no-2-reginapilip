@@ -1,5 +1,6 @@
-<div class="fun-facts <?php echo $bgcolor ?>">
-    <div class="card text-white bg-info card-1">
+<h3>Fun Facts</h3>
+    <div class="bio-margin card text-white 
+    <?php echo isset($_GET['cardcolor']) ? "bg-success" : "bg-info"; ?>">
         <img class="card-img-top\" src="holder.js/100px180/" alt="">
         <div class="card-body">
             <h4 class="card-title">Fun Fact 1</h4>
@@ -8,7 +9,8 @@
         </div>
     </div>
 
-    <div class="card text-white bg-secondary">
+    <div class="bio-margin card text-white 
+    <?php echo isset($_GET['cardcolor']) ? "bg-warning" : "bg-secondary"; ?>">
         <img class="card-img-top" src="holder.js/100px180/" alt="">
         <div class="card-body">
             <h4 class="card-title">Fun Fact 2</h4>
@@ -16,4 +18,3 @@
         </div>
 
     </div>
-</div>
